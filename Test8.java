@@ -81,7 +81,7 @@ public class Test8 {
                 {
                     System.out.println("pisti....");
                     middle.push(card);
-                    takenByMe.addAll(0,middle);
+                    takenByOpponent.addAll(0,middle);
                     middle.clear();
                     opP.add(1);
                 }
