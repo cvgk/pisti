@@ -32,7 +32,7 @@ public class Test7 {
 
           for(int i=1;i<=4;i++)
               opponentCards.add(cards.remove());
-
+         if(!middle.isEmpty())
          Card card = middle.getFirst();
          System.err.println("card: "+card);
          System.out.println("middle: "+middle);
