@@ -212,4 +212,28 @@ public class Test7 {
         }
         System.out.print(myCards+" ");
     }
+    
+    private static int totalPoints(List<Card> cards,ArrayList<Integer> list)
+    {
+        int total = 0;
+        for(Card card:cards)
+        {
+            if(card.getRank()==Card.Rank.ACE)
+                total++;
+            if(card.getRank()==Card.Rank.JACK)
+                total++;
+            if(card.getRank()==Card.Rank.DEUCE && card.getSuit()==Card.Suit.CLUBS)
+            {
+                total = total +2;
+            }
+            if(card.getRank()==Card.Rank.TEN && card.getSuit()==Card.Suit.DIAMONDS)
+            {
+                total = total +3;
+            }
+        }
+        total += list.size() *10;
+        if(cards.size()>26)
+            total = total +3;
+        return total;
+    }
 }
