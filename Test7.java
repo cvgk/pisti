@@ -44,7 +44,7 @@ public class Test7 {
             int count =0;
             while(count< myCards.size()) {
                 System.out.println("opponent cards: "+opponentCards);
-                System.out.print("enter 1,2,3,4 from list: " + myCards+" ");
+                print(myCards);
                 int selection = scanner.nextInt();
                 Card selectedCard = myCards.remove(selection - 1);
                 if(middle.size()==1&&selectedCard.getRank()==card.getRank())
