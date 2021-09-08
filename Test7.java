@@ -49,7 +49,7 @@ public class Test7 {
                 Card selectedCard = myCards.remove(selection - 1);
                 if(middle.size()==1&&selectedCard.getRank()==card.getRank())
                 {
-                    System.out.println("pisti....");
+                    System.out.println("pisti");
                     middle.push(selectedCard);
                     takenByMe.addAll(0,middle);
                     middle.clear();
